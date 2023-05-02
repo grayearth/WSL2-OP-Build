@@ -69,6 +69,6 @@ echo "执行make defconfig"
 make defconfig
 echo "执行make download -j8"
 make download -j8
-find dl -size -1024c -exec ls -l {} \
-find dl -size -1024c -exec rm -f {} \
+# find dl -size -1024c -exec ls -l {} \
+# find dl -size -1024c -exec rm -f {} \
 make V=s -j$(nproc)
